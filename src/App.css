@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg,rgba(213,0,125,0.8),rgba(229,57,53,0.8));
+}
+
+.inner-container {
+  width: 45%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.app-header {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 35px;
+  color: #000;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.form-container {
+  padding: 10px;
+}
+
+
+.date-picker-wrapper {
+  width: 100%;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  height: 45px;  
+}
+
+
+.form-container .react-date-picker__wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  border: none;
+  border-bottom: thin solid #555;
+  font-family: Poppins-Regular;
+  padding: 5;
+  color: #555;
+  line-height: 1.2;
+}
+
+label {
+  color: #555;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  height: 40px;
+  color:#fff;
+}
+
+
+
+
+.customOverlay {
+  background: rgba(36, 123, 160, 0.7);
+}
+.customModal {
+  background: #b2dbbf;
+  max-width: 500px;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
