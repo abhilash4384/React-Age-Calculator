@@ -8,8 +8,8 @@
   background: linear-gradient(45deg,rgba(213,0,125,0.8),rgba(229,57,53,0.8));
 }
 
-.inner-container {
-  width: 45%;
+.main {
+  flex: 0.5;
   background: #fff;
   border-radius: 10px;
   padding: 10px;
@@ -22,11 +22,14 @@
   color: #000;
   line-height: 1.2;
   text-align: center;
+  padding-top:15px;
   padding-bottom: 40px;
 }
 
 .form-container {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -50,6 +53,11 @@
   line-height: 1.2;
 }
 
+.btn-section {
+  align-self: center;  
+  padding-top: 50px;
+}
+
 label {
   color: #555;
 }
@@ -62,17 +70,24 @@ label {
   padding-bottom: 50px;
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 250px;
-  height: 40px;
-  color:#fff;
+.text-center {
+  text-align: center;
 }
 
 
+.btn {
+  min-width: 250px;
+  height: 42px;
+  background-color: #b0182b;
+  color: #fff;
+  margin:10px;
+  font-size: 1rem;
+  border-radius: 5px;;
+}
 
+.btn:disabled {
+  background-color: #ae7676; ;
+}
 
 .customOverlay {
   background: rgba(36, 123, 160, 0.7);
@@ -83,6 +98,3 @@ label {
   width: 100%;
 }
 
-.text-center {
-  text-align: center;
-}

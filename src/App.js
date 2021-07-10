@@ -60,17 +60,18 @@ function App() {
 
   return (
     <div className="container">
-      <div className="inner-container">
+      <div className="main">
         <header className="app-header">
           <div>
             <Calculator color="royalblue" size={30} />
             <span>React Age Calculator</span>
           </div>
         </header>
+
         <div className="form-container">
           {result && !result.errorText && (
-            <section className="pb-50">
-              <p>
+            <section>
+              <p className="text-center">
                 You are <b>{result.years}</b> years <b>{result.months}</b>{" "}
                 months <b>{result.days}</b> days old.
               </p>
@@ -105,7 +106,7 @@ function App() {
             />
           </section>
 
-          <section className="pt-50">
+          <section className="btn-section">
             <button
               className="btn"
               disabled={!formValues || !formValues.tillDate || !formValues.dob}
@@ -114,7 +115,7 @@ function App() {
               Calculate Age
             </button>
 
-            <button className="btn" onClick={resetForm}>
+            <button className="btn" disabled={!formValues} onClick={resetForm}>
               Reset
             </button>
           </section>
